@@ -1,0 +1,562 @@
+/*General Rules */
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: white;
+  font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+}
+
+br {
+	line-height: 200%;
+}
+
+/*CSS GRID*/
+.row {
+	display: flex;
+	flex-direction: row;
+	clear: both;
+	padding-bottom: 10%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.column-1 {
+	width: 25%;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.column-2 {
+	width: 50%;
+}
+
+.column-3 {
+	width: 75%;
+}
+
+.column-4 {
+	width: 100%;
+}
+
+.margin {
+	margin: 0;
+	padding-top: 0;
+	padding-right: 4%;
+	padding-left: 4%;
+}
+/*End of Grid */
+
+/* NAV BAR CONTENT*/
+/*navbar container*/
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  Height: 10vh;
+  background-color: black;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  margin: 0;
+  padding-top: 0%;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+}
+
+a {
+   	color: white;
+   	text-decoration: none;
+}
+/* 10% nav-item1 + 70% nav-items + 20% socialbuttons*/
+#nav-item1 {
+  	float: left;
+  	width : 10%;
+  	max-width: 130px;
+}
+
+.nav-items {
+	width : 60%;
+  display: flex;
+	flex-direction: row;
+	font-size: 1.2em;
+  justify-content: center;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.socialbuttons {
+	min-width: 280px;
+  width: 30%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  list-style:none;
+  white-space: nowrap;
+  float: right;
+}
+
+.socialbutton {
+	height: 120px;
+	width: 33%;
+}
+
+/* Each individual link in nav menu (about/music/contact)*/
+li.nav-item  {
+  display: block;
+  font-family: sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.nav-item1 {
+  display: block;
+  float: left;
+  margin-top: -5px;
+  padding-left: 10px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a:hover
+{
+  background-color: #808080;
+  color: black;
+}
+
+li a img:hover
+{
+  background-color: black;
+}
+
+ /* IMAGES (inside nav bar) */
+ /* Top left logo, links to home page */
+.logo1 {
+  width: 30px;
+  height: 40px;
+}
+
+/*individual social media icon/hyperlink*/
+.img {
+  padding: 5px 20px 0px 20px;
+  height: 40px;
+  width: 40px;
+}
+
+/* mobile nav menu styling */
+#menu-icon {
+  display: none;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+/* Stops mobile nav menu from displaying unless max-width=750px */
+.mobile {
+  display: none;
+}
+
+/* div container for dropdown menu items */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  border-color: white;
+  background-color: black;
+  text-align: left;
+  min-width: 80px;
+  font-family: coolvetica, sans-serif;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  margin: 2%;
+  z-index: 1;
+}
+
+.mobile-nav a {
+  padding-left: 5%;
+  padding-bottom: 5%;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile:hover .mobile-nav {
+  display: block;
+}
+
+.mobile-nav a:hover {
+  background-color: gray;
+  color: black;
+}
+
+.mobile img {
+  height: 30px;
+}
+
+/*MAIN CONTENT */
+/*Presha. header*/
+.presha {
+  color: white;
+  text-align: center;
+  font-size: 10em;
+  font-family: coolvetica, sans-serif;
+  margin: 0;
+  padding-top: 100px;
+}
+
+/* Presha logo (set to display on mobile sized screens)*/
+.logo {
+  display: none;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.presha-logo {
+  align-items: center;
+}
+
+/* index.html HOMEPAGE */
+#u-505-header {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 60vh;
+  width: 90vw;
+  border-collapse: separate;
+  border-radius: 50%;
+}
+
+/*General text and header rules */
+.text1 {
+  font-size: 1.2em;
+  font-style: italic;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.text2 {
+  font-size: 1.5em;
+  font-style: italic;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header1 {
+  font-size: 4em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header2 {
+  font-size: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#middle {
+  text-align: center;
+}
+
+#soundcloud1 {
+  width: 60%;
+}
+
+#imagewrapper .imagetext {
+  position: relative;
+  color: white;
+  font-family: sans-serif;
+  font-size: 2em;
+  text-align: center;
+  bottom: 500px;
+  left: 0px;
+  visibility: hidden;
+}
+
+#imagewrapper:hover .imagetext {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+#release4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70vh;
+}
+
+/*https://codepen.io/wifeo/pen/qzwkb I used this code to learn about transform and transition */
+
+#release4:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+#presh11nov {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#presh11nov:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+/*padding for soundcloud content */
+#soundcloud2 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#soundcloud3 {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+/* ABOUT PAGE */
+/* Images */
+#vaimage {
+  width: 80%;
+  height: 70vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#posters2016 {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#preshanight {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* MUSIC PAGE */
+/* Images */
+#release-1 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#release-1:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+#release-2 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#release-2:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+#release-3 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#release-3:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+#release-4 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#release-4:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+#va-002 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#va-002:hover {
+  opacity: 0.5;
+  max-width: 100%;
+  transform: scale(1.1);
+  transition: all 200ms ease-in;
+}
+
+/* Portrait/Artist Pictures */
+#artistpic1 {
+  width: 80%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#artistpic2 {
+  width: 70%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#artistpic3 {
+  width: 80%;
+  height: 70vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buy button, takes you to Presha bandcamp page */
+#shopbutton {
+  border: 1px solid white;
+  background-color: black;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 1.2em;
+  color: white;
+  height: 20vh;
+  width: 20vw;
+  min-width : 50px;
+}
+
+#shopbutton:hover {
+  background-color: gray;
+}
+
+.bandcampbutton {
+  padding-left: 10%;
+}
+
+/* CONTACT PAGE*/
+.content {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 15%;
+}
+
+p textarea {
+  resize: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Footer logo */
+.black-logo {
+  display: block;
+  height:60px;
+  Width: 50px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+/* FOOTER */
+#contactus {
+	border-bottom: none;
+}
+
+.footertext {
+  	font-style: italic;
+  	font-family: coolvetica, sans-serif;
+  	font-size: 0.7em;
+}
+
+.footer {
+  	display: flex;
+  	flex-direction: row;
+  	height: auto;
+  	flex-grow: 5;
+  	background-color: white;
+  	font-family: coolvetica, sans-serif;
+  	width: 100%;
+  	position: relative;
+  	margin: 0%;
+  	margin-left: 0%;
+  	margin-bottom: 0%;
+  	bottom: 0%;
+  	padding-bottom: 0;
+  	padding-left: 0%;
+}
+
+.footer p{
+  	color: black;
+}
+
+.footer a{
+  	color: black;
+  	text-decoration: underline;
+}

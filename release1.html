@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- HOMEPAGE -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+
+  <title> Presha Records </title>
+    <!-- Transparent icon image-->
+  <link rel="icon" href="images/presha-logo2.png" sizes="16x16" type="image/png">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- media query link to mobile stylesheet -->
+  <link rel="stylesheet" href="mobile-styles.css" media="only screen and (max-width:750px)">
+  <!-- I have permission from friends involved with Presha to use their photos, I also have rights to use all logos and artwork -->
+    <!-- All soundcloud iframe tags and content are provided by soundcloud through their embed function. All soundcloud content is from https://soundcloud.com/presharecords -->
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <section class="nav-bar">
+    <!-- https://w3schools.com/howto/howto_css_dropdown.asp  - I altered and used code from this page for my dropdown menu-->
+    <!-- Mobile dropdown menu, appears at screen max-width:750px  -->
+    <div class="mobile">
+      <button id="menu-icon"> &#9776;</button>
+      <div class="mobile-nav">
+        <a href="index.html"> Home </a>
+        <a href="about.html"> About </a>
+        <a href="music.html"> Music </a>
+        <a href="contact.html"> Contact </a>
+      </div>
+    </div>
+
+    <!--This image is a nav item for the home menu, taken inspiration from https://fabriclondon.com and https://www.watchthehype.com -->
+    <a class="nav-item1" href="index.html">
+      <img class="logo1" src="images/black-logo.jpg" alt="presha logo">
+    </a>
+    <!--Navigation bar pages -->
+    <ul class="nav-items">
+      <li class="nav-item">><a href="about.html">About</a></li>
+      <li class="nav-item">><a href="music.html">Music</a></li>
+      <li class="nav-item">><a href="contact.html">Contact</a></li>
+      <li class="nav-item"><a href="https://presharecords.bandcamp.com/">Shop</a></li>
+    </ul>
+
+    <!--Social media icons -->
+    <div class="socialbuttons">
+      <a class="socialbutton" href="https://www.facebook.com/presharecords/">
+        <img class="img" src="images/facebook-icon2.png" alt="Facebook Link">
+      </a>
+
+      <a class="socialbutton" href="https://soundcloud.com/presharecords">
+        <img class="img" src="images/soundcloud-icon3.png" alt="Soundcloud Link">
+      </a>
+
+      <a class="socialbutton" href="https://twitter.com/preshauk">
+        <img class="img" src="images/twitter-icon1.png" alt="Twitter Link">
+      </a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="main">
+  <!-- Header Section -->
+    <div class="row">
+      <section class="column column-4">
+        <!-- Header section, title and logo -->
+        <h1 class="presha"> Presha. </h1>
+        <!-- At mobile size, h1 will be replaced by a logo -->
+        <img class="logo" src="images/presha1.jpg" alt="Presha Mobile Logo">
+      </section>
+    </div>
+
+    <!-- Content Section 1 -->
+    <div class="row">
+      <section class="column column-2">
+        <img id="release-1" src="images/release-1.jpg" alt="Presha Release 1, 95Bones Blast Chiller EP">
+      </section>
+      <section class="column column-2">
+        <h1 class="header2"> 95Bones - Blast Chiller EP [PRSH001]</h1>
+        <p class="text1">
+          Following on from our well received compilation released in late February, comes the first in our series of artist EPs. Beginning proceedings is 95Bones with his EP, Blast Chiller. 95Bones has been part of the Presha collective for 2 years, and in that time has developed a distinctive mixing style, blending heavy, powerful tracks with fun and light selections in order to create lighthearted sets that demand dancing from their audience. On Blast Chiller, 95Bones brings this approach to his productions, blending musical ideas with his eclectic and far ranging knowledge of dance music as a whole.
+        </p>
+
+        <div class="bandcampbutton">
+          <a href="https://presharecords.bandcamp.com/album/blast-chiller-prsh001-2"> <button id="shopbutton">Buy Here!</button> </a>
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <section class="column column-2">
+        <iframe id="soundcloud2" width="80%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/312916016&amp;color=%230f0d0d&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </section>
+      <section class="column column-2">
+        <img id="artistpic1" src="images/95Bones.jpg" alt="95Bones Portrait">
+      </section>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <div class="footer">
+    <section class="column margin column-1">
+      <img class="black-logo" src="images/presha-logo1.jpg" alt="Presha footer logo">
+      <br>
+      <p> The website of Presha Records.
+        <br> Find out about forthcoming releases or listen through our catologue
+        <br> of forward-thinking music here.
+      </p>
+      <p class="footertext"> Copyright &copy; 2017 Presha Records </p>
+    </section>
+
+    <!-- Footer/Contact  -->
+    <section class="column margin column-1">
+      <h3> Contact </h3>
+      <p>You can email us via the below address,
+        <br> or contact us through our <a href="contact.html">contact</a> page.
+      </p>
+      <a href="mailto:presharecords@gmail.com">
+        <em><strong> presharecords@gmail.com</strong></em>
+      </a>
+    </section>
+
+    <!-- Footer/Pages -->
+    <section class="column margin column-1">
+      <h3>Pages</h3>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="music.html">Music</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </section>
+
+    <!--Social media text links -->
+    <section class="column margin column-1" id="contactus">
+      <h3> Connect With Us! </h3>
+      <p><a href="https://presharecords.bandcamp.com/">Shop</a></p>
+      <p><a href="https://www.facebook.com/presharecords/">Facebook</a></p>
+      <p><a href="https://soundcloud.com/presharecords">Soundcloud</a></p>
+      <p><a href="https://twitter.com/preshauk">Twitter</a></p>
+    </section>
+  </div>
+</body>
+
+</html>

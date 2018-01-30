@@ -1,0 +1,87 @@
+.mobile {
+  position: relative;
+  display: inline-block;
+}
+
+/* Displays unicode for menu-icon */
+#menu-icon {
+  display: inline-block;
+}
+
+/* Stops nav bar links and logo appearing in mobile view */
+li.nav-item {
+  display: none;
+}
+
+.nav-item1 {
+  display: none;
+}
+
+/*No header display as .logo will display in mobile view */
+.presha {
+  display: none;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+  height: 300px;
+  width: 250px;
+}
+
+.img {
+  padding: 5px 20px 0px 10px;
+  height: 40px;
+  width: 40px;
+}
+
+/*Footer P logo, centers when at mobile screen size */
+.black-logo {
+  margin: auto;
+}
+
+/* .row flexbox grid changes to column so that the grid is 1 column wide in mobile view.*/
+.row {
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.footer {
+  flex-direction: column;
+  height: auto;
+  padding: 0;
+}
+
+#u-505-header {
+  height: 40vh;
+}
+
+/* Changing the grid so that can only have one column, 100% wide */
+.column-1 {
+  width: 100%;
+  padding-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+  border-right: 0px;
+}
+
+.column-2 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* padding/margin in mobile view of site */
+.margin {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
